@@ -1,0 +1,409 @@
+﻿@font-face {
+    src: url(Auristela.ttf);
+    font-family: auristela;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'auristela', sans-serif;
+}
+
+ .all {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    background: #693B69;
+    padding: 20px 30px;
+    border: 1px solid #693B69;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+    .container .post {
+        display: none;
+    }
+
+    .container .text {
+        font-size: 25px;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .container .edit {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+        .container .edit:hover {
+            text-decoration: underline;
+        }
+
+    .container .star-widget input {
+        display: none;
+    }
+
+.star-widget label {
+    font-size: 40px;
+    color: #2B2B2B;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #fd4;
+}
+
+input:checked ~ label {
+    color: #fd4;
+}
+
+input#rate-5:checked ~ label {
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+
+#rate-1:checked ~ form header:before {
+    content: "Molto insoddisfatto 😡 ";
+}
+
+#rate-2:checked ~ form header:before {
+    content: "Poco soddisfatto 🫤";
+}
+
+#rate-3:checked ~ form header:before {
+    content: "Soddisfatto 🙂 ";
+}
+
+#rate-4:checked ~ form header:before {
+    content: "Molto soddisfatto 🤗 ";
+}
+
+#rate-5:checked ~ form header:before {
+    content: "Estremamente soddisfatto 😍";
+}
+
+.container form {
+    display: none;
+}
+
+input:checked ~ form {
+    display: block;
+}
+
+form header {
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+form .textarea {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+    form .textarea textarea {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: black;
+        font-family:Arial;
+        border: 1px solid #333;
+        background: white;
+        padding: 10px;
+        font-size: 17px;
+        resize: none;
+    }
+
+.textarea textarea::placeholder {
+    font-family: "Arial", sans-serif;
+}
+
+.textarea textarea:focus {
+    border-color: #444;
+}
+
+form .input {
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+    form .input input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: black;
+        font-family: Arial;
+        border: 1px solid #333;
+        background: white;
+        padding: 10px;
+        font-size: 17px;
+        resize: none;
+    }
+
+.input input::placeholder {
+    font-family: "Arial", sans-serif;
+}
+
+.input input:focus {
+    border-color: #444;
+}
+
+
+
+form .btn {
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+
+    form .btn button {
+        height: 100%;
+        width: 100%;
+        border: 1px solid #444;
+        outline: none;
+        background: #2B2B2B;
+        color: #FFEE77;
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        form .btn button:hover {
+            background: #1b1b1b;
+        }
+
+
+/**footer*/
+.footer {
+    background-image: url(footerHotel.png); /*c: aggiunto background*/
+    background-position: center; /*c:aggiunto*/
+    background-repeat: no-repeat; /*c:aggiunto*/
+    justify-content: center;
+    height: 23vh; /*cambiata altezza*/
+    text-align: center;
+    margin-top: 150px; /*c: PROVA PER VEDERE SE RIESCO A STACCARE UN PO' IL FOOTER*/
+    color: black; /*c: aggiunto*/
+    justify-content: space-between;
+    justify-items: center;
+    display: flex;
+}
+
+.textFooter { /*c: aggiunto*/
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.footerLogo {
+    height: 150px;
+}
+
+.icone {
+    height: 40px;
+}
+
+.testoGestionale {
+    margin-left: 100px;
+    margin-top: 150px;
+}
+
+.contattiServizi { /*classe dei contatti in cui ci sono i servizi offerti*/
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: auristela;
+    background-color: white;
+}
+
+.imgNavbar {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 440px;
+    width: 100%;
+}
+
+a {
+    color: black;
+    font-size: 17px;
+}
+/*da vedere CORINNE DA QUI*/
+.header {
+    background-color: white;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0, .1);
+    width: 100%;
+    z-index: 1;
+}
+
+    .header ul {
+        margin-left: 150px;
+        padding: 0;
+        list-style: none; /*per togliere i pallini*/
+        overflow: hidden;
+        background-color: white;
+    }
+
+
+
+        .header ul li {
+            padding: 5px;
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .header ul a {
+            display: block; /*per dare l'opportunità di cliccare ovunque nella voci del menu e non solo sulle scritte*/
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
+            .header ul a:hover {
+                background-color: #462555;
+                color: white;
+            }
+
+            .header ul a:current {
+                background-color: #462555;
+                color: white;
+            }
+
+
+
+    .header .menu {
+        clear: both; /*guarda menu, non ti devi adeguare al logo, devi restare lì*/
+        max-height: 0;
+        transition: max-height .2s ease-out; /*con transition per animazione, cambierà altezza*/
+    }
+
+    .header .menu-icon {
+        padding: 28px 20px; /*icona del menu*/
+        position: relative; /*relative perché poi, all'interno icono absolute. absolute deve trovarsi in relative, altrimenti farà riferimento a elemento superiore*/
+        float: right;
+        cursor: pointer;
+    }
+
+        .header .menu-icon .nav-icon {
+            background-color: grey;
+            display: inline-block;
+            width: 18px;
+            height: 2px;
+            position: relative;
+            transition: background-color .2s ease-out;
+        }
+            /*creare 2 liniette hamb pseudoelementi, non esistono. li creiamo noi*/
+            .header .menu-icon .nav-icon::before,
+            .header .menu-icon .nav-icon::after {
+                background-color: grey;
+                content: "";
+                display: block;
+                height: 100%; /*fa riferimento all'elemento originale*/
+                width: 100%;
+                transition: all .2s ease-out;
+                position: absolute
+            }
+
+            .header .menu-icon .nav-icon::before {
+                top: 5px;
+            }
+
+            .header .menu-icon .nav-icon::after {
+                top: -5px;
+            }
+
+    .header .menu-btn {
+        display: none; /*nasconde la checkbox*/
+    }
+
+        .header .menu-btn:checked ~ .menu { /*quando checkbox è checkata l'effetto che vogliamo lo vai a dare a menu, che grazie alla tilde ~abbiamo quale sia*/
+            max-height: 400px;
+        }
+
+        .header .menu-btn:checked ~ .menu-icon .nav-icon {
+            background-color: transparent; /*ci serve scompaia solo l'elemento nav principale, venga tolto */
+        }
+
+            .header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+                transform: rotate(-45deg);
+                top: 0;
+            }
+
+            .header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+                transform: rotate(45deg);
+                top: 0;
+            }
+
+/*quanto fatto finora è mobile first adesso dobbiamo pensare ai media*/
+
+@media(min-width:48em) {
+    .header li {
+        float: left;
+    }
+
+        .header li a {
+            padding: 20px 30px;
+        }
+
+        .header li ul {
+            display: none;
+        }
+
+        .header li:hover ul {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            width: 150px;
+            padding: 0;
+            margin: 0 0 0 -1px;
+            border: 1px solid;
+            background: white;
+            border-radius: 20px;
+        }
+
+    .header .menu {
+        clear: none; /*il float deve avere effetto*/
+        float: right;
+        max-height: 300px;
+        margin-right: 70px;
+    }
+
+    .header .menu-icon {
+        display: none; /*fa sparire hamburger*/
+    }
+
+
+}

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <!--C: aggiunti i meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="una breve descrizione del contenuto pagina" /> <!--metatag descrizione per essere meglio trovato-->
+    <meta name="keywords" content="informatica, programmazione, keywords pertinenti" /> <!--metatag per keywords ricerche, spider legge anche il resto del sito-->
+    <meta name="author" content="classe di bitcamp" /> <!--autore sito-->
+    <meta name="robots" content="index,follow" /> <!--tag che parla direttament:index per essere ndicizzato no index per non essere indicizzati. follow per scandagliare sito nofollow per nno far controllare sito-->
+    <meta name="revisit-after" content="7 days" /> <!--ogni quanto devono ripassare spier per news-->
+    <meta name="language" content="it" id="language-meta" /> <!--lingua sito-->
+    <meta name="generator" content="visual studio" /> <!--sapere come è stato creato sito-->
+    <title>Hotel Manager</title>
+    
+    <link rel="stylesheet" type="text/css" href="StyleSheetHotelRecensioni.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="index.html"> <img src="bannerHotel.png" class="imgNavbar" /> </a>
+
+        <input class="menu-btn" id="menu-btn" type="checkbox" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+
+        <ul class="menu">
+            <li> <a href="index.html">Home</a> </li>
+
+            <li>
+                <a> I nostri prodotti</a>
+                <ul class=" sottomenu">
+                    <li> <a href="Gestionalehotel.html"> Gestionale hotel</a></li>
+                    <li> <a href="Apppericellulari.html"> App per il cellulare</a></li>
+                    <li> <a href="feedbackOspiti.html"> Feedback ospiti</a></li>
+                </ul>
+            </li>
+            <li> <a href="Chisiamo.html"> Chi siamo</a> </li>
+            <li> <a href="contatti.html"> Contatti</a> </li>
+
+        </ul>
+
+    </header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <div class="all">
+        <h1 style="font-size:50px;">Aiutaci a migliorare!</h1><br /><br /> <br />
+        <h2>Per noi la tua opinione e' molto importante.<br /><br /></h2><br />
+        <h3>Lasciaci il tuo feedback e aiutaci a migliorare.</h3>
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <div class="container" align="center">
+
+            <div class="post">
+                <div class="text">Grazie per il tuo feedback!</div>
+                <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="https://formspree.io/f/mnqebzwy" method="POST">
+                    <header></header>
+                    <div class="textarea">
+                        <textarea type="text" id="nome" name="nome" placeholder="Nome" style="height:40px;width:340px;"></textarea><br /><br />
+                        <textarea type="email" id="email" name="email" placeholder="Email" style="height:40px;width:340px;"></textarea>
+                    </div>
+                    <div class="textarea">
+                        <br />
+                        <textarea id="feedbackCliente" name="feedbackCliente" cols="50" placeholder="Motiva la tua scelta..."></textarea>
+                    </div><br />
+                    <div class="btn">
+                        <button type="submit">Invia</button>
+                    </div><br />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br /> <br />
+    <br />
+    <div align="center">
+        <h1 style="font-size:50px;">IN ATTESA DEI NOSTRI PRIMI FEEDBACK!</h1><br /><br /> <br />
+    </div>
+    <br />
+    <br />
+    <br /> <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+
+
+    <footer class="footer">
+
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter"><strong>Contatti</strong></h9> <!--c: cambiato da h4 a h9-->
+            <p class="scritteFooter">Email: hotelmanagerbitcamp@gmail.com</p> <!--cambiati dati nel foote-->
+            <p class="scritteFooter">Telefono: +39 0812044158</p>
+            <p class="scritteFooter">Via  dei precisini, 20 80121 Napoli-NA</p>
+
+        </div>
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter"><strong>Social Media</strong></h9>
+            <p>
+                <a href="https://www.instagram.com/hotelmanager_bitcamp/"><img src="ig.png" alt="Icona ig" class=" icone"></a>
+                <a href="https://www.facebook.com/profile.php?id=61557360879105"><img src="fb.png" alt="Icona fb" class=" icone"></a>
+            </p>
+            <p class="scritteFooter">Informativa privacy</p> <!--c:aggiunto-->
+            <p class="scritteFooter">Cookie e policy</p> <!--c:aggiunto-->
+
+        </div>
+        <div class="bottom-text">
+            <a href="index.html">
+                <img src="logoHotel.png" alt="Immagine logo" class="footerLogo">
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+        /*const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            editBtn.onclick = () => {
+                widget.style.display = "block";
+                post.style.display = "none";
+            }
+            return false;
+        }*/
+    </script>
+
+
+
+
+</body>
+</html>

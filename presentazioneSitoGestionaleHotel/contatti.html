@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--C: aggiunti i meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="una breve descrizione del contenuto pagina" /> <!--metatag descrizione per essere meglio trovato-->
+    <meta name="keywords" content="informatica, programmazione, keywords pertinenti" /> <!--metatag per keywords ricerche, spider legge anche il resto del sito-->
+    <meta name="author" content="classe di bitcamp" /> <!--autore sito-->
+    <meta name="robots" content="index,follow" /> <!--tag che parla direttament:index per essere ndicizzato no index per non essere indicizzati. follow per scandagliare sito nofollow per nno far controllare sito-->
+    <meta name="revisit-after" content="7 days" /> <!--ogni quanto devono ripassare spier per news-->
+    <meta name="language" content="it" id="language-meta" /> <!--lingua sito-->
+    <meta name="generator" content="visual studio" /> <!--sapere come è stato creato sito-->
+    <title>Hotel Manager</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheetHotel.css">
+
+</head>
+
+<body>
+    <!--i vari data-translate-key che vedete su ogni riga, servono solo per la traduzione, non inficiano sul css o sulle function di javascript-->
+    <header class="header">
+
+        <a href="index.html"> <img src="bannerHotel.png" class="imgNavbar" /> </a>
+
+        <input class="menu-btn" id="menu-btn" type="checkbox" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+
+        <ul class="menu">
+            <li> <a href="index.html">Home</a> </li>
+
+            <li>
+                <a> I nostri prodotti</a>
+                <ul class=" sottomenu">
+                    <li> <a href="Gestionalehotel.html"> Gestionale hotel</a></li>
+                    <li> <a href="Apppericellulari.html"> App per il cellulare</a></li>
+                    <li> <a href="feedbackOspiti.html"> Feedback ospiti</a></li>
+                </ul>
+            </li>
+            <li> <a href="Chisiamo.html"> Chi siamo</a> </li>
+            <li> <a style="background-color: #462555; color: white;" href="contatti.html"> Contatti</a> </li>
+
+        </ul>
+
+    </header>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div>
+        <h1 style="text-align:center;font-size:50px;" class="scritte">Contatti</h1>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+
+    <div class="contattiServizi">
+
+        <section class="sectionC">
+
+            <div class="contact-info">
+                <h3 class="scritte">Per i servizi di:</h3>
+                <ul class="ulC">
+                    <li class="liC"><strong>Gestionale Hotel</strong></li>
+                    <li class="liC"><strong>APP per cellulare</strong></li>
+                    <li class="liC"><strong>Interfaccia cliente</strong></li>
+                </ul>
+                <p class="scritte"> potete contattarci ai recapiti che trovate qui sotto </p>
+                <br />
+                <p class="scritte"> oppure compilare il form qui accanto per prendere un appuntamento. </p>
+                <br />
+                <br />
+
+
+                <p class="scritte"> <strong>Email:</strong> info@hotelmanager.com </p> <br />
+                <p class="scritte"> <strong>Telefono:</strong> +39 0812044158</p><br /><br />
+                <p class="scritte">  <strong>Whatsapp:</strong>3341234567 </p><br /><br />
+                <br />
+                <br />
+                <p class="scritte"> <strong>Indirizzo:</strong>Via dei riparatori, 20 80121 Napoli-NA</p>
+
+            </div>
+            <div id="contactForm" class="contact-form" align="center">
+                <h3 class="scritte">Hai domande?</h3>
+                <h3 class="scritte">Vuoi prendere un appuntamento o ricevere la nostra DEMO?</h3>
+                <h3 class="scritte">Scrivici!</h3>
+                <form action="https://formspree.io/f/mnqebzwy" method="POST">
+                    <label class="labelC" for="name">Nome:</label>
+                    <input class="inputTextC" type="text" id="name" name="name" required>
+                    <br />
+                    <label class="labelC" for="email">Email:</label>
+                    <input class="inputTextC" type="email" id="email" name="email" required>
+                    <br />
+                    <label class="labelC" for="message">Oggetto del messaggio:</label>
+                    <textarea class="inputTextC" id="message" name="message" rows="4" required></textarea>
+                    <br />
+                    <label class="labelC">Vuoi ricevere la nostra DEMO?</label>
+                    <select name="richiestaDemo">
+                        <option>SI</option>
+                        <option>NO</option>
+                    </select><br />
+                    <br />
+                    <br />
+                    <button class="pulsanteC" style="cursor:pointer;" type="submit">Invia Richiesta</button>
+                    <br />
+                    <br />
+                    <button class="pulsanteC" style="cursor:pointer;font-size:20px;" type="submit" onclick="reset()">Reset</button>
+                    <br />
+                    <br />
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+
+    <footer class="footer">
+
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter"><strong>Contatti</strong></h9> <!--c: cambiato da h4 a h9-->
+            <p class="scritteFooter">Email: hotelmanagerbitcamp@gmail.com</p> <!--cambiati dati nel foote-->
+            <p class="scritteFooter">Telefono: +39 0812044158</p>
+            <p class="scritteFooter">Via  dei precisini, 20 80121 Napoli-NA</p>
+
+        </div>
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter"><strong>Social Media</strong></h9>
+            <p>
+                <a href="https://www.instagram.com/hotelmanager_bitcamp/"><img src="ig.png" alt="Icona ig" class=" icone"></a>
+                <a href="https://www.facebook.com/profile.php?id=61557360879105"><img src="fb.png" alt="Icona fb" class=" icone"></a>
+            </p>
+            <p class="scritteFooter">Informativa privacy</p> <!--c:aggiunto-->
+            <p class="scritteFooter">Cookie e policy</p> <!--c:aggiunto-->
+
+        </div>
+        <div class="bottom-text">
+            <a href="index.html">
+                <img src="logoHotel.png" alt="Immagine logo" class="footerLogo">
+            </a>
+        </div>
+
+    </footer>
+
+    <script>
+
+        function reset() {
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var message = document.getElementById("message");
+
+
+            name.value = "";
+            email.value = "";
+            message.value = "";
+        }
+
+        /* function inviaMessaggio() {
+             var name = document.getElementById("name").value;
+             var email = document.getElementById("email").value;
+             var message = document.getElementById("message").value;
+             var wantDemo = document.getElementById("wantDemo").checked;
+
+             console.log(name + email + message);
+
+             if (name === "" || email === "" || message === "") {
+                 alert("Compila i campi obbligatori prima di inviare");
+                 return false;
+             } else {
+
+                 // Aggiungi informazioni sulla richiesta della demo
+                 var demoInfo = wantDemo ? "Voglio provare la DEMO." : "Non voglio provare la DEMO.";
+
+
+                 // Costruisci il messaggio da passare
+                 const testoDaPassareHotel = "<p class='it'> " + name + "<br>" + email + "<br>" + message + "</br></br > " + demoInfo + " <br></p > ";
+
+                 // Codifica il testo per l'URL
+                 const testoCodificatoHotel = encodeURIComponent(testoDaPassareHotel);
+
+                 // Crea l'URL con il parametro "testo" e passa il testo codificato
+                 const urlDestinazione = "datiRicevutiHotel.html?testo=" + testoCodificatoHotel;
+
+                 // Reindirizza alla pagina di destinazione
+                 window.location.href = urlDestinazione;
+
+                 // Pulisci i campi del modulo dopo l'invio
+                 document.getElementById("name").value = "";
+                 document.getElementById("email").value = "";
+                 document.getElementById("message").value = "";
+                 document.getElementById("wantDemo").checked = false;
+             }
+         }*/
+
+
+
+
+
+
+    </script>
+</body>
+</html>
