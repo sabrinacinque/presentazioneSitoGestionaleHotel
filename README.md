@@ -1,1 +1,2 @@
 # presentazioneSitoGestionaleHotel
+Nel corso bitcamp, stiamo lavorando alla realizzazione di un gestionale java per la gestione di un Hotel. Abbiamo dovuto creare un sito per lanciare il nuovo prodotto che verrà messo sul mercato.Se si compila sia il forum di contatto che quello di feedback(valutazione stelline), quando si preme sul button arriva davvero la richiesta ad un'email creata appositamente per il progetto. Anche le pagine di instagramm e di fb sono state create appositamente per il progetto.
